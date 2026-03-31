@@ -33,10 +33,10 @@ jobs:
           cache: npm
 
       - name: Install dependencies
-        run: npm install
+        run: npm ci
 
       - name: Build Astro site
-        run: npm build
+        run: npm run build
         env:
           ASTRO_SITE: https://12buHtiG.github.io
           ASTRO_BASE: /astro_proj_1
